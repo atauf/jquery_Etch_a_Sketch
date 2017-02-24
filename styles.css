@@ -1,13 +1,14 @@
 .container {
 	background-color: white;
-	height: 192px;
-	width: 192px;
+	/*height: 680px;
+	width: 680px;*/
+	
 }
 
 .block {
 	background-color: blue;
-	height: 10px;
-	width: 10px;
+	height: 5.75vh;
+	width: 5.75vw;
 	margin: 1px;
 	display: inline-block;
 }
