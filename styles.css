@@ -10,9 +10,15 @@
 	height: 5.75vh;
 	width: 5.75vw;
 	margin: 1px;
-	display: inline-block;
+	display: inline-flex;
 }
 
 .entered {
 	background-color: grey;
+}
+
+.button {
+	text-align: center;
+	height: 30px;
+	width: 100%;
 }
