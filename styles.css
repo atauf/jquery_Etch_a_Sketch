@@ -21,4 +21,22 @@
 	text-align: center;
 	height: 30px;
 	width: 100%;
+	margin-bottom: 10px;
+}
+
+form {
+	height: 30px;
+	width: 50%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#input-button {
+	width: 45%;
+	text-align: center;
+
+}
+
+#input-grid-size {
+	width: 45%;
 }
