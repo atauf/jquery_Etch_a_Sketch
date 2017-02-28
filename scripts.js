@@ -7,6 +7,13 @@ $(document).ready(function(){
 	};
 	
 
+	function greyOut(){
+		//Grey out the blocks that your mouse passes enters
+		$('.block').on('mouseenter', function(){
+		$(this).addClass('entered');
+	});
+	}
+
 	//Give form ability to take user input and create # of <div>s accordingly
 	$('#input-button').on('click', function(){
 		$(".block").remove();
@@ -18,6 +25,7 @@ $(document).ready(function(){
 					$('.container').append('<div class="block"></div>');
 				};
 			};
+		greyOut();
 		}	
 		else {
 			for (var i = 0; i < 16; i++){
@@ -25,13 +33,8 @@ $(document).ready(function(){
 					$('.container').append('<div class="block"></div>');
 				};
 			};
-		
+		greyOut();
 		}
-	});
-
-	//Grey out the blocks that your mouse passes enters
-	$('.block').on('mouseenter', function(){
-		$(this).addClass('entered');
 	});
 
 	//Give RESET button ability to reset
@@ -39,4 +42,6 @@ $(document).ready(function(){
 		$('.entered').removeClass('entered');
 	});
 
+	//functions to always call when the document is ready
+	greyOut();
 	});
